@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+body{
+   background-color: #080808;
+   color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 12px 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    font-size: 19px;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+nav h1{
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav h1 span{
+    color:#ff004f;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-text{
+    padding-top: 10%;
+    font-size: 30px;
+    padding-left: 40%;
+   
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-text p span{
+    color: #ff004f;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-text p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about{
+    padding-left: 41%;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+}
+.about h1{
+    font-size: 70px;
+    margin-top: 200px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.image{
+    width: 500px;
+    padding-left: 20px;
+    margin-top: -230px;
+     border: 1px solid wheat;
+     background-color: #ff004f;
+    position:absolute;
+    border-radius: 40%;
+    transform: scale(1);
+    margin-left: 30px;
+}
+.image:hover{
+    transform: scale(0.8);
+}
+.image img{
+    position: relative;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.skill-container{
+    display: flex;
+    width: 1000px;
+    margin-top: 500px;
+    padding: 40px 13px;
+    justify-content: space-around;
+    background-color: #262626;
+    cursor: pointer;
+    border-radius: 13px;
+    margin-left: 20%;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+.skills{
+    transform: scale(0.9);
+    transition: 0.4s ease;
+}
+.skills h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff004f;
+    margin-bottom: 10px;
+}
+.skills p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.Education{
+    transform: scale(0.9);
+    transition: 0.4s ease;
+}
+.Education h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff004f;
+    margin-bottom: 10px;
+}
+.Education p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.lanuage{
+    transform: scale(0.9);
+    transition: 0.4s ease;
+}
+.lanuage h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff004f;
+    margin-bottom: 10px;
+}
+.lanuage p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills:hover{
+    color: #ff004f;
+    transform: scale(1.2);
+}
+.lanuage:hover{
+    color: #ff004f;
+    transform: scale(1.2);
+}
+.Education:hover{
+    color: #ff004f;
+    transform: scale(1.2);
+}
+.about h1 span{
+    color: #ff004f;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*--------------services--------------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.service-conainer h1{
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.service-conainer h1 span{
+    color: #ff004f;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: backgrounf 0.5s,tranform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+/*---------------Portfolio---------------*/
+.container h1{
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+.container h1 span{
+    color: #ff004f;
+    font-family: 'Ubuntu', sans-serif;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-list{
+    display:flex;
+}
+.work img{
+    width: 500px;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    transition: tranform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    text-decoration: none;
+    margin-top: 30px;
+    color: #ff004f;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+/*-----------Contact US------------ */
+.contact-left{
+    margin-left: 10%;
+    margin-top: 60px;
+    position: absolute;
+}
+.sub-title span{
+    color: #ff004f;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-right{
+    float: right;
+    margin-right: 10%;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: block;
+    background-color: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 0;
+}
+#btn3{
+    margin-left: 0;
+}
+nav .fas{
+    display: none;
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+/*----------css for small screen------------*/
+@media screen and (max-width:450px){
+    .header-text h1{
+        font-size: 30px;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+        margin-left: -100px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+       }
+    .header-text p{
+        font-size: 20px;
+        margin-left: -20px;
+        margin-top: 20px;
+
+    }
+    nav .fas{
+        display: block;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        z-index: 11;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .image{
+        margin-top: -100px;
+        margin-left: -40px;
+        width: 100%;
+        border: 0;
+        border-radius: 1000px;
+        border-radius: 0;
+        display: flex;
+        
+    }
+    .image img{
+        width: 100%;
+        margin-left: -8px;
+    }
+    .about h1{
+        font-size: 40px;
+        display: flex;
+        margin-right: 130px;
+        margin-top: 100px;
+        margin-left: -40px;
+    }
+    .skill-container{
+        width: 300px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 9%;
+    }
+    .service-conainer h1{
+        font-size: 20px;
+    }
+    .services-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+        width: 300px;
+        }
+    .services-list h2{
+        font-size: 10px;
+    }
+    .services-list .fa{
+        width: 20px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .work-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .work img{
+        width: 100%;
+
+    }
+    .layer{
+        display: none;
+    }
+    .btn{
+        border-radius: 10%;
+    }
+    .contact-left{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left{
+            width: 100%;
+            position: absolute;
+            margin-top: 110%;
+            display: flex;
+            margin-right: 100%;
+            margin-left: 0;
+    }
+
+    .sub-title{
+        position:absolute;
+        margin-top: -470px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
